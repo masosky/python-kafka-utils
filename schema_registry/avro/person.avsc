@@ -1,0 +1,20 @@
+{
+  "namespace": "com.fullonnet",
+  "type": "record",
+  "name": "Subject",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    },
+    {
+      "name": "sex",
+      "type": "string",
+      "default": "female"
+    }
+  ]
+}

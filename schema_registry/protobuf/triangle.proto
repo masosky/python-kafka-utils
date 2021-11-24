@@ -1,0 +1,5 @@
+syntax = "proto3";
+message Triangle {
+  float base = 1;
+  float height = 2;
+}

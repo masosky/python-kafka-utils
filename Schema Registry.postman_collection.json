@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "bd6c7c2f-16b0-4835-aa1a-e7466143f9cc",
+		"name": "Schema Registry",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Schema by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/schemas/ids/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"schemas",
+						"ids",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Schema Versions by Subject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/subjects/person/versions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"person",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Schema By Subject and Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/subjects/person/versions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"person",
+						"versions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Subjects Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Schema Versions by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/schemas/ids/1/versions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"schemas",
+						"ids",
+						"1",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Schema Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/schemas/types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"schemas",
+						"types"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
