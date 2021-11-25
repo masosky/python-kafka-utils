@@ -1,0 +1,15 @@
+{
+  "namespace": "com.fullonnet.cercle",
+  "type": "record",
+  "name": "Subject",
+  "fields": [
+    {
+      "name": "radius",
+      "type": "double"
+    },
+    {
+      "name": "diameter",
+      "type": "double"
+    }
+  ]
+}
