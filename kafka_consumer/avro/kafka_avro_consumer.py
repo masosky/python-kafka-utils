@@ -6,14 +6,15 @@ from confluent_kafka.cimpl import Message
 from confluent_kafka.error import KeyDeserializationError, ValueDeserializationError, ConsumeError
 from confluent_kafka.serialization import StringDeserializer
 
+from kafka_consumer.deserializers.json_2_dict_deserializer import Json2DictDeserializer
 from logger.logger import get_logger
 
 logger: Logger = get_logger()
-topic: str = "string-topic"
+topic: str = "json-topic"
 
 consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'key.deserializer': StringDeserializer('utf_8'),
-                 'value.deserializer': StringDeserializer('utf_8'),
+                 'value.deserializer': Json2DictDeserializer(unicode='utf_8'),
                  'group.id': "group-id",
                  "auto.offset.reset": "largest"}
 
