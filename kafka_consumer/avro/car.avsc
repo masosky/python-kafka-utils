@@ -1,0 +1,15 @@
+{
+  "namespace": "com.fullonnet.car",
+  "type": "record",
+  "name": "Subject",
+  "fields": [
+    {
+      "name": "brand",
+      "type": "string"
+    },
+    {
+      "name": "cv",
+      "type": "float"
+    }
+  ]
+}

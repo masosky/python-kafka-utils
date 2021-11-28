@@ -11,7 +11,7 @@ from confluent_kafka.serialization import StringDeserializer
 from logger.logger import get_logger
 
 logger: Logger = get_logger()
-topic: str = "avro-topic"
+topic: str = "cercle-avro-topic"
 sr_conf: dict = {'url': "http://localhost:8081"}
 schema_registry_client: SchemaRegistryClient = SchemaRegistryClient(sr_conf)
 
@@ -40,5 +40,3 @@ while True:
         raise e
     except ConsumeError as e:
         raise e
-    finally:
-        consumer.close()

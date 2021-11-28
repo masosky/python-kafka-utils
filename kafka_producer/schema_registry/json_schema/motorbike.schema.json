@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://example.com/employee.schema.json",
+  "title": "Record of employee",
+  "description": "This document records the details of an employee",
+  "type": "object",
+  "properties": {
+    "brand": {
+      "description": "Brand",
+      "type": "string"
+    },
+    "name": {
+      "description": "Name",
+      "type": "string"
+    }
+  }
+}

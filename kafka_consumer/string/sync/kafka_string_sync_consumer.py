@@ -43,5 +43,3 @@ while True:
         raise e
     except ConsumeError as e:
         raise e
-    finally:
-        consumer.close()
