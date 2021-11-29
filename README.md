@@ -34,20 +34,24 @@ http://localhost:9091
 
 ### Json
 
+[kafka_json_producer.py](kafka_producer/json/kafka_json_producer.py)
 [kafka_json_consumer.py](kafka_consumer/json/kafka_json_consumer.py)
 
 ### Avro
 
+[kafka_avro_producer.py](kafka_producer/avro/kafka_avro_producer.py)
 [kafka_avro_consumer.py](kafka_consumer/avro/kafka_avro_consumer.py)
 
 ### Schema Registry
 
 #### Json
 
+[kafka_schema_registry_json_schema_producer.py](kafka_producer/schema_registry/json_schema/kafka_schema_registry_json_schema_producer.py)
 [kafka_json_schema_registry_consumer.py](kafka_consumer/schema_registry/json_schema/kafka_json_schema_registry_consumer.py)
 
 #### Avro
 
+[kafka_schema_registry_avro_producer.py](kafka_producer/schema_registry/avro/kafka_schema_registry_avro_producer.py)
 [kafka_avro_schema_registry_consumer.py](kafka_consumer/schema_registry/avro/kafka_avro_schema_registry_consumer.py)
 
 ## Confluent Quickstart
