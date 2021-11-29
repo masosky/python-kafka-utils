@@ -10,7 +10,7 @@ conf = {
     "disable_existing_loggers": "True",
     "formatters": {
         "standard": {
-            "format": f"%(asctime)s, %(levelname)s, {os.getpid()}, %(name)s, %(message)s",
+            "format": f"%(asctime)s, %(levelname)s, %(processName)s, %(threadName)s, {os.getpid()}, %(name)s, %(message)s",
             "datefmt": "%Y-%m-%dT%H:%M:%SZ"
         }
     },
