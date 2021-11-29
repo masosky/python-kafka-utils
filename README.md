@@ -44,6 +44,20 @@ http://localhost:9091
 
 ### Schema Registry
 
+#### Publish Schemas
+
+##### Avro
+
+[register_avro_schema.py](schema_registry/avro/register_avro_schema.py)
+
+##### Json
+
+[register_json_schema.py](schema_registry/json/register_json_schema.py)
+
+##### Protobuf
+
+[register_protobuf_schema.py](schema_registry/protobuf/register_protobuf_schema.py)
+
 #### Json
 
 [kafka_schema_registry_json_schema_producer.py](kafka_producer/schema_registry/json_schema/kafka_schema_registry_json_schema_producer.py)
