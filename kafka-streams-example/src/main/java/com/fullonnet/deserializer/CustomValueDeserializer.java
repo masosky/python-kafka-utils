@@ -31,9 +31,6 @@ public class CustomValueDeserializer<T> implements Deserializer<T> {
     @Override
     public T deserialize(String topic, byte[] bytes) {
         LOGGER.debug("Topic: " + topic + " bytes: " + new String(bytes, StandardCharsets.UTF_8));
-        if (bytes == null) {
-            return null;
-        }
         try {
             InputStream myInputStream = new ByteArrayInputStream(bytes);
             Map<String, Object> map = OBJECT_MAPPER.readValue(myInputStream, new TypeReference<Map<String, Object>>() {

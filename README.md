@@ -2,6 +2,14 @@
 
 ## Presentation Review
 
+### Control Center
+
+http://localhost:9091
+
+### Schema Registry Postman
+
+[collection.json](Schema%20Registry.postman_collection.json)
+
 ### Multiple Consumers
 
 [multiple_consumers.py](basics/multiple_consumers.py)
@@ -10,16 +18,18 @@
 
 [kafka_admin.py](basics/kafka_admin.py)
 
-## Kafka Consumer
+## Kafka Consuming / Producing
 
 ### String
 
 #### Async
 
+[kafka_string_producer.py](kafka_producer/string/kafka_string_producer.py)
 [kafka_string_async_consumer.py](kafka_consumer/string/async/kafka_string_async_consumer.py)
 
 #### Sync
 
+[kafka_string_producer.py](kafka_producer/string/kafka_string_producer.py)
 [kafka_string_sync_consumer.py](kafka_consumer/string/sync/kafka_string_sync_consumer.py)
 
 ### Json

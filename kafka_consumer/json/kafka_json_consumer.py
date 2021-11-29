@@ -15,7 +15,7 @@ topic: str = "json-topic"
 consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'key.deserializer': StringDeserializer('utf_8'),
                  'value.deserializer': Json2DictDeserializer(unicode='utf_8'),
-                 'group.id': "group-id",
+                 'group.id': "group-id-json-topic",
                  "auto.offset.reset": "largest"}
 
 # consumer_conf["auto.offset.reset"] = "earliest"

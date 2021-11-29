@@ -15,7 +15,7 @@ topic: str = "car-avro-topic"
 consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'key.deserializer': StringDeserializer('utf_8'),
                  'value.deserializer': AvroDeserializer(schema_str=open("car.avsc").read()),
-                 'group.id': "group-id",
+                 'group.id': "group-id-car-avro-topic",
                  "auto.offset.reset": "largest"}
 
 # consumer_conf["auto.offset.reset"] = "earliest"
