@@ -60,11 +60,13 @@ http://localhost:9091
 
 #### Json
 
+![](images/json-confluent-format.png)
 [kafka_schema_registry_json_schema_producer.py](kafka_producer/schema_registry/json_schema/kafka_schema_registry_json_schema_producer.py)
 [kafka_json_schema_registry_consumer.py](kafka_consumer/schema_registry/json_schema/kafka_json_schema_registry_consumer.py)
 
 #### Avro
 
+![](images/avro-confluent-format.png)
 [kafka_schema_registry_avro_producer.py](kafka_producer/schema_registry/avro/kafka_schema_registry_avro_producer.py)
 [kafka_avro_schema_registry_consumer.py](kafka_consumer/schema_registry/avro/kafka_avro_schema_registry_consumer.py)
 
