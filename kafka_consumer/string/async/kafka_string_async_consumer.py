@@ -18,7 +18,7 @@ consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'enable.auto.commit': True,
                  "auto.offset.reset": "largest"}
 
-# consumer_conf["auto.offset.reset"] = "earliest"
+consumer_conf["auto.offset.reset"] = "earliest"
 
 consumer = DeserializingConsumer(consumer_conf)
 consumer.subscribe([topic])
