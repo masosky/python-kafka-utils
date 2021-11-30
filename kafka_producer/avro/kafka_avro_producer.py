@@ -27,7 +27,7 @@ def delivery_callback(err: KafkaError, msg: Message):
             f'Message delivered to topic={msg.topic()} partition={msg.partition()}  offset={msg.offset()}\n')
 
 
-def encode_data() -> bytes:
+def encode_data(value: dict) -> bytes:
     schema_str: str = open("car.avsc", 'r').read()
     schema = avro.schema.parse(schema_str)
     writer = avro.io.DatumWriter(schema)
@@ -43,7 +43,7 @@ def encode_data() -> bytes:
 try:
     key = None
     value = {"brand": "Mercedes-Benz", "cv": 180.6}
-    raw_bytes = encode_data()
+    raw_bytes = encode_data(value)
     producer.produce(topic, key=key, value=raw_bytes, on_delivery=delivery_callback)
     producer.flush(5)
 except BufferError as e:

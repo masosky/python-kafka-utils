@@ -9,7 +9,6 @@ from confluent_kafka.schema_registry.avro import AvroDeserializer
 from confluent_kafka.serialization import StringDeserializer
 
 from logger.logger import get_logger
-
 logger: Logger = get_logger()
 topic: str = "cercle-avro-topic"
 sr_conf: dict = {'url': "http://localhost:8081"}
@@ -19,7 +18,7 @@ consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'key.deserializer': StringDeserializer('utf_8'),
                  'value.deserializer': AvroDeserializer(schema_registry_client=schema_registry_client),
                  'group.id': "group-id-cercle-avro-topic",
-                 "auto.offset.reset": "largest"}
+                 "auto.offset.reset": "earliest"}
 
 # consumer_conf["auto.offset.reset"] = "earliest"
 
