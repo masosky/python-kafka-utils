@@ -14,7 +14,7 @@ topic: str = "string-topic"
 consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'key.deserializer': StringDeserializer('utf_8'),
                  'value.deserializer': StringDeserializer('utf_8'),
-                 'group.id': "group-id-string-topic",
+                 'group.id': "group-id-string-sync-topic",
                  'enable.auto.commit': False,
                  "auto.offset.reset": "largest"}
 
