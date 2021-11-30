@@ -16,10 +16,11 @@ consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'value.deserializer': StringDeserializer('utf_8'),
                  'group.id': "group-id-string-sync-topic",
                  'enable.auto.commit': False,
-                 "auto.offset.reset": "largest"}
+                 "auto.offset.reset": "latest"}
 
 
-# consumer_conf["auto.offset.reset"] = "earliest"
+consumer_conf["auto.offset.reset"] = "earliest"
+
 def do_something(msg: Message):
     logger.debug(f'Key: {msg.key()} Value: {msg.value()} Offset: {msg.offset()} Partition: {msg.partition()}')
 

@@ -30,7 +30,7 @@ public class CustomValueDeserializer<T> implements Deserializer<T> {
 
     @Override
     public T deserialize(String topic, byte[] bytes) {
-        LOGGER.debug("Topic: " + topic + " bytes: " + new String(bytes, StandardCharsets.UTF_8));
+        LOGGER.debug("Topic: " + topic + " bytes (utf-8): " + new String(bytes, StandardCharsets.UTF_8));
         try {
             InputStream myInputStream = new ByteArrayInputStream(bytes);
             Map<String, Object> map = OBJECT_MAPPER.readValue(myInputStream, new TypeReference<Map<String, Object>>() {
@@ -39,7 +39,7 @@ public class CustomValueDeserializer<T> implements Deserializer<T> {
             LOGGER.debug(map);
             return (T) OBJECT_MAPPER.writeValueAsString(map);
         } catch (Exception e) {
-            System.err.println(e);
+            LOGGER.error(e);
             return null;
         }
     }

@@ -16,7 +16,7 @@ consumer_conf = {'bootstrap.servers': "localhost:9092",
                  'value.deserializer': StringDeserializer('utf_8'),
                  'group.id': "group-id-string-async-topic",
                  'enable.auto.commit': True,
-                 "auto.offset.reset": "largest"}
+                 "auto.offset.reset": "latest"}
 
 consumer_conf["auto.offset.reset"] = "earliest"
 
